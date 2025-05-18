@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="img/favicon.png" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="menu-principal"  id="menu-principal">
+        <a href="#Nosaltres">Nosaltres</a>
+        <a href="#Carta">Carta</a>
+        <a href="#Galeria">Galeria</a>
+    </nav>
+
+    <nav class="boto-reserva"><a href="#Reservar">Reservar</a></nav>
+
+    <header class="img-header">
+        <img src="img/fondo.jpg" alt="fondo">
+        <div class="topleft">
+            <h1>Restaurant els coberts</h1>
+            <h1>Lorem ipsum dolor sit, amet consectetur
+    </header>
+
+    <div id="Nosaltres"></div>
+    <section class="section-main">
+        <article class="generic">
+            <h2 class="titol">Sobre nosaltres</h2>
+            <div class="nosaltres-container">
+                <div class="nosaltres1"><img src="img/about.jpg" alt="foto coctel"></div>
+                <div class="nosaltres2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas doloremque vero dicta sapiente
+                        voluptatem corrupti eaque. Sapiente animi dicta recusandae, fugit doloremque iste temporibus
+                        debitis? Ut dolores doloremque voluptatem eum.</p>
+                </div>
+                <div class="nosaltres3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas doloremque vero dicta sapiente
+                        voluptatem corrupti eaque. Sapiente animi dicta recusandae, fugit doloremque iste temporibus
+                        debitis? Ut dolores doloremque voluptatem eum.</p>
+                </div>
+                <div class="nosaltres4"><img src="img/us.jpg" alt="foto cerveza"></div>
+            </div>
+        </article>
+
+        <div id="Carta"></div>
+        <article class="general">
+            <h2 class="titol">Carta</h2>
+            <div class="carta-container">
+                <div class="carta1">My Header</div>
+                <div class="carta2">Menu1</div>
+                <div class="carta3">
+                    <h3>Contingut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas doloremque vero dicta sapiente
+                        voluptatem corrupti eaque. Sapiente animi dicta recusandae, fugit doloremque iste temporibus
+                        debitis? Ut dolores doloremque voluptatem eum.</p>
+                </div>
+                <div class="carta4"><img src="img/entrantes.jpg" alt="imatge abstracta">
+                    <div class="overlay">Entrants</div>
+                </div>
+                <div class="carta5"><img src="img/fish.jpg" alt="imatge d'un retrat">
+                    <div class="overlay">Peix</div>
+                </div>
+                <div class="carta6">Menu2</div>
+                <div class="carta7">
+                    <h3>Contingut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas doloremque vero dicta sapiente
+                        voluptatem corrupti eaque. Sapiente animi dicta recusandae, fugit doloremque iste temporibus
+                        debitis? Ut dolores doloremque voluptatem eum.</p>
+                </div>
+                <div class="carta8"><img src="img/pasta.jpg" alt="imatge d'una fotografia">
+                    <div class="overlay">Pasta</div>
+                </div>
+                <div class="carta9"><img src="img/salad.jpg" alt="imatge d'un paisatjeS">
+                    <div class="overlay">Salad</div>
+                </div>
+            </div>
+        </article>
+
+        <div id="Galeria"></div>
+        <article class="generic">
+            <h2 class="titol">Galeria</h2>
+            <div class="galeria-container">
+                <div class="img-g"><img src="img/1.jpg" alt="foto comida"></div>
+                <div class="img-g"><img src="img/2.jpg" alt="foto comida"></div>
+                <div class="img-g"><img src="img/3.jpg" alt="foto comida"></div>
+                <div class="img-g"><img src="img/4.jpg" alt="foto comida"></div>
+                <div class="img-g"><img src="img/5.jpg" alt="foto comida"></div>
+                <div class="img-g"><img src="img/6.jpg" alt="foto comida"></div>
+                <div class="img-g"><img src="img/7.jpg" alt="foto comida"></div>
+                <div class="img-g"><img src="img/8.jpg" alt="foto comida"></div>
+            </div>
+        </article>
+
+        <article class="generic" id="Reservar">
+            <h2>Reserva</h2>
+            <div class="Reserva">
+                <form action="#" method="POST" class="reserva-container">
+                    <div class="colum for1">
+                        <label for="login">Nom</label>
+                        <input type="text" name="login" id="login" placeholder="">
+                    </div>
+                    <div class="colum for2">
+                        <label for="numcomensals">Número de persones</label>
+                        <input type="number" id="numcomensals" name="comensals" min="1" max="10">
+                    </div>
+                    <div class="colum for3">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+                    <div class="colum for4">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+                    <div class="colum for5">
+                        <label for="descripcio">Descripció</label>
+                        <textarea id="descripcio" cols="30" rows="5">Escriu el teu comentari aqui...</textarea>
+                    </div>
+                    <div class="colum for0">
+                        <input type="checkbox" name="confirmar" id="terminos">
+                        <label for="terminos">Aceptar termins y
+                            condicions.</label>
+                    </div>
+                    <div class="colum for6">
+                        <input type="submit" name="submit" value="Reservar">
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <span class="material-symbols-outlined">email</span>
+            <p class="padding-footer">exemple@example.com</p>
+            <span class="material-symbols-outlined"> call </span>
+            <p>999999999</p>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

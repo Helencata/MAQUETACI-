@@ -1,0 +1,469 @@
+body {
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(226, 226, 226);
+}
+
+.titol {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h2 {
+    padding-bottom: 5px;
+    font-size: 1.1em;
+}
+
+/*----------------------------------------------------------*/
+
+.menu-principal img {
+    width: 3em;
+    position: fixed;
+    top: 0.1em;
+    left: 0.5em;
+}
+
+.menu-principal {
+    background-color: rgb(33, 37, 41);
+    padding: 12px 25px 12px 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    position: sticky;
+    top: 0px;
+    font-size: 1.1em;
+    z-index: 2;
+    transition: all 1s;
+}
+
+.menu-principal a:link,
+.menu-principal a:visited {
+    text-decoration: none;
+    color: rgb(233, 236, 239);
+}
+
+.menu-principal a:hover {
+    text-decoration: underline;
+    color: rgb(212, 175, 55);
+}
+
+
+/*----------------------------------------------------------*/
+
+.boto-reserva {
+    background-color: #000;
+    border: 1px black solid;
+    border-radius: 5px;
+    position: fixed;
+    text-align: center;
+    bottom: 1em;
+    right: 1em;
+    padding: 5px;
+    font-size: 1.1em;
+    z-index: 1;
+}
+
+#Reservar {
+    margin-top: 50px;
+    display: block;
+    justify-content: flex-end;
+}
+
+.boto-reserva a:link,
+.boto-reserva a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.boto-reserva a:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------------------------------------------*/
+
+.img-header {
+    position: relative;
+}
+
+.img-header img {
+    object-fit: cover;
+    height: 40em;
+    width: 100%;
+    display: block;
+}
+
+.topleft {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2px 2px 2px 10px;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    font-size: 1em;
+}
+
+.section-main {
+    margin: 0 7em 0 7em;
+}
+
+/*--------------------------------------------------------*/
+
+#Nosaltres {
+    margin-bottom: 70px;
+}
+
+.nosaltres-container {
+    display: grid;
+    grid-gap: 0.7em;
+    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
+    grid-template-areas: "nos1 nos2 nos2"
+                         "nos3 nos3 nos4";
+}
+
+.nosaltres1 {
+    grid-area: nos1;
+    width: 100%;
+}
+
+.nosaltres2 {
+    border: 2px black solid;
+    grid-area: nos2;
+}
+
+.nosaltres3 {
+    border: 2px black solid;
+    grid-area: nos3;
+}
+
+.nosaltres4 {
+    grid-area: nos4;
+    width: 100%;
+}
+
+.nosaltres1 img,
+.nosaltres4 img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.nosaltres-container p {
+    padding: 10px;
+}
+
+/*----------------------------------------------------------------------*/
+
+#Carta {
+    margin-bottom: 70px;
+}
+
+.carta-container {
+    display: grid;
+    grid-template-areas: "carta1 carta1 carta1"
+                         "carta2 carta3 carta3"
+                         "carta2 carta4 carta5"
+                         "carta6 carta7 carta7"
+                         "carta6 carta8 carta9";
+    grid-gap: 0.5em;
+    font-size: 1.1em;
+}
+
+.carta1 {
+    border: 2px black solid;
+    border-radius: 5px;
+    grid-area: carta1;
+    text-align: center;
+
+}
+
+.carta2 {
+    border: 2px black solid;
+    grid-area: carta2;
+}
+
+.carta3 {
+    border: 2px black solid;
+    grid-area: carta3;
+}
+
+.carta4 {
+    border: 2px black solid;
+    grid-area: carta4;
+    width: 100%;
+    position: relative;
+}
+
+.carta5 {
+    border: 2px black solid;
+    grid-area: carta5;
+    width: 100%;
+    position: relative;
+}
+
+.artac6 {
+    border: 2px black solid;
+    grid-area: carta6;
+}
+
+.carta7 {
+    border: 2px black solid;
+    grid-area: carta7;
+}
+
+.carta8 {
+    border: 2px black solid;
+    grid-area: carta8;
+    width: 100%;
+    position: relative;
+}
+
+.carta9 {
+    border: 2px black solid;
+    grid-area: carta9;
+    width: 100%;
+    position: relative;
+}
+
+.carta4 img,
+.carta5 img,
+.carta8 img,
+.carta9 img {
+    object-fit: cover;
+    height: 15em;
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    width: 100%;
+    color: white;
+    font-size: 1.1em;
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+}
+
+
+/*------------------------------------------------------------*/
+
+#Galeria {
+    margin-bottom: 75px;
+}
+
+.galeria-container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.img-g {
+    width: 387px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.img-g:nth-child(1),
+.img-g:nth-child(4),
+.img-g:nth-child(5),
+.img-g:nth-child(8) {
+    filter: brightness(33%);
+}
+
+.img-g:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    filter: brightness(50%);
+}
+
+.img-g img {
+    width: 100%;
+    display: block;
+}
+/*RESERVA*/
+
+.reserva-container {
+
+    .for1 {
+    grid-area: elem1;
+}
+
+.for2 {
+    grid-area: elem2;
+}
+
+.for3 {
+    grid-area: elem3;
+}
+
+.for4 {
+    grid-area: elem4;
+}
+
+.for5 {
+    grid-area: elem5;
+}
+
+.for6 {
+    grid-area: elem6;
+    justify-self: end;
+}
+
+.for0 {
+    grid-area: elem0;
+    flex-direction: initial;
+    font-size: 0.8em;
+}
+    display: grid;
+    grid-template-areas: "elem1 elem2"
+                         "elem3 elem4"
+                         "elem5 elem5"
+                         "elem0 elem6";
+    grid-gap: 1.5em;
+    font-size: 1.1em;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*----------------------------------------------------------------*/
+
+.footer {
+    position: relative;
+    margin-top: 70px;
+    background-color: rgb(33, 37, 41);
+    color: rgb(212, 175, 55);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    border: 1px solid #000;
+    z-index: 3;
+}
+
+.padding-footer {
+    padding-right: 1em;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/*---------768px------------*/
+@media(max-width: 768px) {
+    .menu-principal {
+        justify-content: center;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 40%;
+        left: 33%;
+        right: 33%;
+    }
+
+    .section-main {
+        margin: 0 2em 0 2em;
+    }
+
+    .nosaltres-container {
+        grid-template-areas: "nos1 nos1 nos1"
+                             "nos2 nos2 nos2"
+                             "nos4 nos3 nos3";
+    }
+
+    .nos4 img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carta-container {
+        grid-template-areas: "carta1 carta1 carta1"
+                             "carta2 carta3 carta3"
+                             "carta2 carta4 carta4"
+                             "carta2 carta5 carta5"
+                             "carta6 carta7 carta7"
+                             "carta6 carta8 carta8"
+                             "carta6 carta9 carta9";
+    }
+
+    .img-g {
+        width: 250px;
+    }
+
+    .reserva-container {
+        margin: 0 3em 0 3em;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+}
+
+/*------------------576px------------------*/
+
+@media(max-width: 576px) {
+    .menu-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topleft {
+        display: none;
+    }
+
+    .nosaltres-container {
+        display: grid;
+        grid-template-areas: "nos1 nos1 nos1"
+                             "nos2 nos2 nos2"
+                             "nos4 nos4 nos4"
+                             "nos3 nos3 nos3";
+    }
+
+    .carta-container {
+        display: grid;
+        grid-template-areas: "carta2"
+                             "carta3"
+                             "carta4"
+                             "carta5"
+                             "carta6"
+                             "carta7"
+                             "carta8"
+                             "carta9";
+        grid-gap: 0.5em;
+        font-size: 1.5m;
+    }
+
+    .carta1 {
+        display: none;
+    }
+
+    .carta2,
+    .carta6 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 1em;
+
+    }
+
+    .img-g {
+        width: 450px;
+    }
+}
