@@ -368,11 +368,11 @@ h2 {
 /*---------768px------------*/
 @media(max-width: 768px) {
     .menu-principal {
-        justify-content: center;
+        justify-content: center; /*aqui ponemos el menu principal en el centro*/
     }
 
     .topleft {
-        position: absolute;
+        position: absolute; /*esto es el texto de la imagen en el centro*/
         top: 40%;
         left: 33%;
         right: 33%;
@@ -384,7 +384,7 @@ h2 {
 
     .nosaltres-container {
         grid-template-areas: "nos1 nos1 nos1"
-                             "nos2 nos2 nos2"
+                             "nos2 nos2 nos2" /*hacemos un nuevo grid para colocar las cajas tal y como se nos pide*/
                              "nos4 nos3 nos3";
     }
 
@@ -397,7 +397,7 @@ h2 {
         grid-template-areas: "carta1 carta1 carta1"
                              "carta2 carta3 carta3"
                              "carta2 carta4 carta4"
-                             "carta2 carta5 carta5"
+                             "carta2 carta5 carta5" /*ajustamos las cajas otra vez*/
                              "carta6 carta7 carta7"
                              "carta6 carta8 carta8"
                              "carta6 carta9 carta9";
@@ -412,7 +412,7 @@ h2 {
     }
 
     .footer {
-        justify-content: center;
+        justify-content: center; /*ponemos el contenido del footer en el centro*/
     }
 }
 
@@ -431,7 +431,7 @@ h2 {
     .nosaltres-container {
         display: grid;
         grid-template-areas: "nos1 nos1 nos1"
-                             "nos2 nos2 nos2"
+                             "nos2 nos2 nos2" /*hacemos un nuevo grid para colocar las cajas tal y como se nos pide*/
                              "nos4 nos4 nos4"
                              "nos3 nos3 nos3";
     }
@@ -441,7 +441,7 @@ h2 {
         grid-template-areas: "carta2"
                              "carta3"
                              "carta4"
-                             "carta5"
+                             "carta5" /*hacemos un nuevo grid para colocar las cajas tal y como se nos pide*/
                              "carta6"
                              "carta7"
                              "carta8"
@@ -451,7 +451,7 @@ h2 {
     }
 
     .carta1 {
-        display: none;
+        display: none; /*que se oculte*/
     }
 
     .carta2,
