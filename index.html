@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="img/favicon.png" href="/img/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:" />
     <title>Document</title>
 </head>
 
@@ -23,7 +22,7 @@
         <img src="img/fondo.jpg" alt="fondo">
         <div class="topleft">
             <h1>Restaurant els coberts</h1>
-            <h1>Lorem ipsum dolor sit, amet consectetur
+            <h1>Lorem ipsum dolor sit, amet consectetur</h1>
     </header>
 
     <div id="Nosaltres"></div>
@@ -94,6 +93,60 @@
                 <div class="img-g"><img src="img/8.jpg" alt="foto comida"></div>
             </div>
         </article>
+
+            </section>
+    <section class="container-video">
+  <div class="video-v">
+    <video id="video-rest">
+      <source src="video/yummy.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-controls">
+      <span class="material-symbols-outlined icona-control" onclick="play_video()">play_arrow</span>
+      <span class="material-symbols-outlined icona-control" onclick="pause_video(true)">pause</span>
+      <span class="material-symbols-outlined icona-control" onclick="volume_up(true)">volume_up</span>
+      <span class="material-symbols-outlined icona-control" onclick="muted_video(true)">volume_off</span>
+    </div>
+  </div>
+</section>
+
+
+    <script>
+        function play_video(){
+            let videoObj = document.getElementById("video-rest");
+            videoObj.play();
+            console.log("Reproduir Video");
+        }
+
+        function pause_video() {
+            let videoObj = document.getElementById("video-rest");
+            videoObj.pause();
+        }
+
+        function volume_up() {
+            let videoObj = document.getElementById("video-rest");
+            videoObj.muted =false;
+        }
+
+        function muted_video() {
+            let videoObj = document.getElementById("video-rest");
+            videoObj.muted =true;
+        }
+
+        window.onscroll = function () { controlarScroll() };
+        let menu = document.getElementById("menu-principal");
+
+        function controlarScroll() {
+            let posicio = document.documentElement.scrollTop;
+            if (posicio > 850) {
+                menu.style.padding = "18px 30px 18px 18px";
+                menu.style.backgroundColor = "grey";
+            } else {
+                menu.style.padding = "12px 25px 12px 12px";
+                menu.style.backgroundColor = "rgb(33, 37, 41)";
+            }
+        }
+    </script>
 
         <article class="generic" id="Reservar">
             <h2>Reserva</h2>
